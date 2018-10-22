@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "PROBLEM: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23." << endl; 
+    cout << "Find the sum of all the multiples of 3 or 5 below 1000." << endl << endl;
+   
+   
+   
+    int NumPlusOne = 1;   
+    int totalSum = 0;
+
+    while(NumPlusOne < 1000)
+    {
+        if(NumPlusOne % 3 == 0 || NumPlusOne % 5 == 0)
+        {
+	        totalSum += NumPlusOne;
+        }
+    
+        NumPlusOne++;
+    }
+    
+    cout << "SOLUTION:"<< endl;
+    cout << "The sum of all of the multiples of 3 or 5 is " << totalSum;
+   
+    return 0;
+}
